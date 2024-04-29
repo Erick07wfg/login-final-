@@ -4,7 +4,7 @@
         protected $dbh;
         protected function conexion(){
             try{
-                $conectar= $this->dbh = new PDO("mysql:local=localhost;dbname=proyectc","root","",);
+                $conectar= $this->dbh = new PDO("mysql:local=localhost;dbname=tec_export","root","",);
                 return $conectar;
             }
             catch(Exception $e){
